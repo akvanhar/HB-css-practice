@@ -1,43 +1,41 @@
 <html>
 <head>
     <style>
-    h1 {
-        font-family: helvetica;
-    }
-    div.bigbox {
-        width: 350px;
-        height: 200px;
-        margin: 0;
-    }
+        div.backgroundBox {
+            background-color: #555555;
+            height: 130px;
+            width: 600px;
+            margin: 5px;
+        }
+        div.topBox {
+            background-color: #cccccc;
+            margin: 3px;
+            height: 124px;
+            width: 32%;
+            display: inline-block;
+            vertical-align: top;
+        }
 
-    div#red {
-        background-color: red;
-    }
+        #right {
+            margin-right: 6px;
+        }
 
-    div#blue {
-        background-color: blue;
-    }
-
-    div.blackbox{
-        background-color: black;
-        height: 100px;
-        width: 100px;
-        display: inline-block;
-        margin-top: 50px;
-        margin-left: 50px;
-    }
+        #left {
+            margin-left: 6px;
+        }
 
     </style>
     <title>Hello world!</title>
 </head>
 <body>
-    <div class = 'bigbox' id='red'>
-        <div class='blackbox'></div>
-        <div class='blackbox'></div>
+    <div class="backgroundBox">
+        <div class="topBox" id='left'></div><!-- 
+         --><div class="topBox"></div><!-- 
+         --><div class="topBox" id='right'></div>
     </div>
-    <div class = 'bigbox' id='blue'>
-        <div class='blackbox'></div>
-        <div class='blackbox'></div>
+    <div class="backgroundBox">
+    </div>
+    <div class="backgroundBox">
     </div>
 </body>
 </html>
